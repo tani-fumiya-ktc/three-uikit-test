@@ -53,6 +53,12 @@ function App() {
       style={{ position: "absolute", inset: 0, touchAction: "none" }}
       gl={{ localClippingEnabled: true }}
     >
+      <mesh>
+        {/* 球体ジオメトリ */}
+        <sphereGeometry />
+        {/* ノーマルマテリアル */}
+        <meshNormalMaterial />
+      </mesh>
       <OrbitControls />
       <Container backgroundColor="red" sizeX={8} sizeY={4} flexDirection="row">
         <Container flexGrow={1} margin={32} backgroundColor="green" />
