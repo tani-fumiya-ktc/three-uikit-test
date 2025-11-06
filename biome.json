@@ -5,6 +5,43 @@
     "clientKind": "git",
     "useIgnoreFile": true
   },
+  "lsp": {
+    "enabled": true
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "arrowParentheses": "always",
+      "semicolons": "always"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
+  },
+  "typescript": {
+    "enabled": true,
+    "formatter": {
+      "quoteStyle": "single",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "arrowParentheses": "always",
+      "semicolons": "always"
+    }
+  },
+  "json": {
+    "formatter": {
+      "trailingCommas": "none"
+    }
+  },
+  "jsx": {
+    "parser": "babel"
+  },
   "files": {
     "ignoreUnknown": true,
     "ignore": ["node_modules", "dist", "build"]
@@ -42,25 +79,6 @@
         "all": true,
         "noExplicitAny": "warn"
       }
-    }
-  },
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "single",
-      "quoteProperties": "asNeeded",
-      "trailingCommas": "es5",
-      "bracketSpacing": true,
-      "bracketSameLine": false,
-      "arrowParentheses": "always",
-      "semicolons": "always"
-    },
-    "parser": {
-      "unsafeParameterDecoratorsEnabled": true
-    }
-  },
-  "json": {
-    "formatter": {
-      "trailingCommas": "none"
     }
   },
   "overrides": [

@@ -1,8 +1,7 @@
 import {Canvas } from '@react-three/fiber'
 import{Fullscreen, Container} from '@react-three/uikit'
 
-function App() {
-
+function App() { 
   return (
     <Canvas>
       <Fullscreen>
