@@ -1,0 +1,40 @@
+{
+  "recommendations": [
+    // Utilities
+    "oderwat.indent-rainbow",
+    "alefragnani.bookmarks",
+    "coenraads.bracket-pair-colorizer",
+    "aaron-bond.better-comments",
+    "mutantdino.resourcemonitor",
+    "ionutvmi.path-autocomplete",
+    "chrmarti.regex",
+    "gruntfuggly.todo-tree",
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    // Markdown
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "takumii.markdowntable",
+    // .env
+    "mikestead.dotenv",
+    // YAML
+    "redhat.vscode-yaml",
+    // Git
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "jackiotyu.git-worktree-manager",
+    // GitHub
+    "GitHub.vscode-pull-request-github",
+    "github.vscode-github-actions",
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    // TOML
+    "tamasfe.even-better-toml",
+    // OpenAPI
+    "42crunch.vscode-openapi",
+    // Frontend
+    "biomejs.biome",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
