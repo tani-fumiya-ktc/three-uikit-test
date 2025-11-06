@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+# Three UIKit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application combining three.js, React Three Fiber, and UIKit for building interactive 3D user interfaces.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project leverages modern web technologies to create a 3D UI experience:
+- **React 19** - Modern React with hooks and latest features
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool with HMR support
+- **Three.js** - 3D graphics library
+- **React Three Fiber** - React renderer for three.js
+- **UIKit** - Flexible UI component library
 
-## React Compiler
+## Dependencies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Production
+- `react` (^19.1.1) - UI library
+- `react-dom` (^19.1.1) - React DOM rendering
+- `three` (^0.181.0) - 3D graphics engine
+- `@react-three/fiber` (^9.4.0) - React renderer for three.js
+- `@react-three/uikit` (^1.0.56) - UIKit components for three.js
 
-## Expanding the ESLint configuration
+### Development
+- `typescript` (~5.9.3) - Type checking
+- `vite` (^7.1.7) - Build tool
+- `@vitejs/plugin-react` (^5.0.4) - React plugin for Vite
+- `eslint` & related packages - Code linting
+- TypeScript type definitions for React and Node
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Scripts
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- `npm run dev` - Start development server with HMR
+- `npm run build` - Build for production (includes TypeScript compilation)
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Build for production
+pnpm build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Package Manager
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project uses `pnpm` (v10.20.0) for dependency management.
